@@ -31,9 +31,9 @@ function openFullscreen() {
     
     if (img.requestFullscreen) {
         img.requestFullscreen();
-    } else if (img.webkitRequestFullscreen) { // Safari
+    } else if (img.webkitRequestFullscreen) { 
         img.webkitRequestFullscreen();
-    } else if (img.msRequestFullscreen) { // IE11
+    } else if (img.msRequestFullscreen) {
         img.msRequestFullscreen();
     }
 }
@@ -81,4 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
             closeWork();
         }
     });
+
 });
