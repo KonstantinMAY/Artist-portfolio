@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фоны | Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a href="portfolio.html" class="back">← К категориям</a>
+            <h1>Фоны</h1>
+            <p class="subtitle">Уголок атмосферы и не перегруженных картин.</p>
+        </header>
+
+        <main class="gallery">
+            <!-- Работа 1 -->
+            <div class="work" onclick="openWork('images/background1.jpg', 'Остатки прошлого', 'Графический планшет')">
+                <img src="images/background1.jpg" alt="Остатки прошлого">
+                <div class="work-info">
+                    <h4>Остатки прошлого</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 2 -->
+            <div class="work" onclick="openWork('images/background2.jpg', 'Забытое место', 'Графический планшет')">
+                <img src="images/background2.jpg" alt="Забытое место">
+                <div class="work-info">
+                    <h4>Забытое место</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 3 -->
+            <div class="work" onclick="openWork('images/art3.jpg', 'Фон/Комната Сайори.Doki Doki Literature Club.', 'Графический планшет')">
+                <img src="images/background3.jpg" alt="Фон/Комната Сайори.Doki Doki Literature Club.">
+                <div class="work-info">
+                    <h4>Фон/Комната Сайори.Doki Doki Literature Club.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Галерея художника</p>
+        </footer>
+    </div>
+
+   <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <button onclick="closeWork()" class="close">×</button>
+        <img id="modal-img" src="" alt="">
+        <div class="modal-info">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <p class="download-instruction">
+                <strong>Управление:</strong><br>
+                Нажмите на картинку для полноэкранного просмотра<br>
+                Для выхода из полноэкранного режима нажмите Esc<br>
+                Для скачивания: правой кнопкой мыши → "Сохранить картинку как..."
+            </p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

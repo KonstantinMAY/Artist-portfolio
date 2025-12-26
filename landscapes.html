@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арты | Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a href="portfolio.html" class="back">← К категориям</a>
+            <h1>Арты</h1>
+            <p class="subtitle">Искусство во всех его проявлениях.</p>
+        </header>
+
+        <main class="gallery">
+            <!-- Работа 1 -->
+            <div class="work" onclick="openWork('images/art1.jpg', 'Арт/Dandy World.Тиша.', 'Графический планшет')">
+                <img src="images/art1.jpg" alt="Арт/Dandy World.Тиша.">
+                <div class="work-info">
+                    <h4>Арт/Dandy World.Тиша.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 2 -->
+            <div class="work" onclick="openWork('images/art2.jpg', 'Арт/Макс.', 'Графический планшет')">
+                <img src="images/art2.jpg" alt="Арт/Макс.">
+                <div class="work-info">
+                    <h4>Арт/Макс.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 3 -->
+            <div class="work" onclick="openWork('images/art3.jpg', 'Арт/Константин.', 'Графический планшет')">
+                <img src="images/art3.jpg" alt="Арт/Константин.">
+                <div class="work-info">
+                    <h4>Арт/Константин.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 4 -->
+            <div class="work" onclick="openWork('images/art4.jpg', 'Арт/Фурри в варенье.', 'Графический планшет')">
+                <img src="images/art4.jpg" alt="Арт/Фурри в варенье.">
+                <div class="work-info">
+                    <h4>Арт/Фурри в варенье.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 5 -->
+            <div class="work" onclick="openWork('images/art5.jpg', 'Арт/Кейс.Fundamental Paper Education.', 'Графический планшет')">
+                <img src="images/art5.jpg" alt="Арт/Кейс.Fundamental Paper Education.">
+                <div class="work-info">
+                    <h4>Арт/Кейс.Fundamental Paper Education.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 6 -->
+            <div class="work" onclick="openWork('images/art6.jpg', 'Арт/Тсеук.Fundamental Paper Education.', 'Графический планшет')">
+                <img src="images/art6.jpg" alt="Арт/Тсеук.Fundamental Paper Education.">
+                <div class="work-info">
+                    <h4>Арт/Тсеук.Fundamental Paper Education.</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 7 -->
+            <div class="work" onclick="openWork('images/portrait8.jpg', 'OC/Fundamental Paper Education.AISUE', 'Графический планшет')">
+                <img src="images/portrait8.jpg" alt="OC/Fundamental Paper Education.AISUE">
+                <div class="work-info">
+                    <h4>OC/Fundamental Paper Education.AISUE</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+            <!-- Работа 8 -->
+            <div class="work" onclick="openWork('images/portrait9.jpg', 'OC/Fundamental Paper Education.TSEYK', 'Графический планшет')">
+                <img src="images/portrait9.jpg" alt="OC/Fundamental Paper Education.TSEYK">
+                <div class="work-info">
+                    <h4>OC/Fundamental Paper Education.TSEYK</h4>
+                    <p>Графический планшет</p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Галерея художника</p>
+        </footer>
+    </div>
+
+   <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <button onclick="closeWork()" class="close">×</button>
+        <img id="modal-img" src="" alt="">
+        <div class="modal-info">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <p class="download-instruction">
+                <strong>Управление:</strong><br>
+                Нажмите на картинку для полноэкранного просмотра<br>
+                Для выхода из полноэкранного режима нажмите Esc<br>
+                Для скачивания: правой кнопкой мыши → "Сохранить картинку как..."
+            </p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
